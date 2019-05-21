@@ -98,7 +98,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="3.79"
      inkscape:cx="372.6015"
-     inkscape:cy="898.45944"
+     inkscape:cy="835.1349"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -141,8 +141,8 @@
        d="M 164.30627,151.06324 H 35.794346"
        id="path5407"
        inkscape:connector-curvature="0"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect844"
@@ -151,10 +151,12 @@
        x="70.06102"
        y="37.428566"
        rx="2"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <g
-       id="g858">
+       id="g858"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <rect
          inkscape:export-ydpi="150"
          inkscape:export-xdpi="150"
@@ -200,7 +202,9 @@
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39299998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
     <g
-       id="g871">
+       id="g871"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <rect
          inkscape:export-ydpi="150"
          inkscape:export-xdpi="150"
@@ -247,7 +251,9 @@
     </g>
     <g
        id="g877"
-       transform="translate(-3.568118)">
+       transform="translate(-3.568118)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <path
          inkscape:export-ydpi="150"
          inkscape:export-xdpi="150"
@@ -290,7 +296,9 @@
     </g>
     <g
        id="g883"
-       transform="translate(3.6380053)">
+       transform="translate(3.6380053)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <rect
          inkscape:export-ydpi="150"
          inkscape:export-xdpi="150"
@@ -339,35 +347,35 @@
        d="M 340.31641 368.5 L 340.31641 711.62695 L 341.03125 711.62695 L 359.39062 743.69336 L 378.18555 776.51953 L 396.98047 743.69336 L 415.33984 711.62695 L 416.05078 711.62695 L 416.05078 368.5 L 340.31641 368.5 z "
        id="rect5387"
        transform="scale(0.26458333)"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:0.99173552"
        d="m 79.512683,97.42857 c 10.423512,24.24262 10.423512,24.24262 10.423512,24.24262 l 0.105854,-24.172233 z"
        id="path5410"
        inkscape:connector-curvature="0"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:0.99173552"
        d="m 120.60953,97.42857 c -10.42358,24.24262 -10.42358,24.24262 -10.42358,24.24262 L 110.0801,97.498957 Z"
        id="path5410-0"
        inkscape:connector-curvature="0"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 0.5;stroke-dashoffset:0;stroke-opacity:1"
        d="M 100.0692,211.95535 V 29.01488"
        id="path845"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <g
        id="g945"
        transform="matrix(1.2813677,0,0,1.2813677,-28.156239,-41.503791)"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150">
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <circle
          r="0.32288137"
          inkscape:export-ydpi="96"
@@ -406,8 +414,8 @@
     <g
        id="g954"
        transform="matrix(1.2052158,0,0,1.2052158,-20.535779,-12.495321)"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150">
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="translate(-0.06310271,-3.4827958)"
          id="g920">
