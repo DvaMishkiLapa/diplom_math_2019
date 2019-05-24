@@ -38,9 +38,111 @@
     \label{fig:scheme_porg}
 \end{figure}
 
+
+\clearpage
+\section{Модель}
+
+Пусть дан некий дебаланс с радиусом $r$, радиус вала которого равен $R$, $\omega$ --- угловая скорость и $l$ --- расстояние от центра масс до оси вращения дебаланса, а его масса будет равна $m$ (рис. \ref{fig:debalance}). 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\linewidth]{img/debalance.png}
+    \caption{Схема дебаланса.}
+    \label{fig:debalance}
+\end{figure}
+
+Тогда, при вращении данного дебаланса возникнет центробежная сила, которая имеет вид:
+
+\begin{equation}\label{eq:centrifugal}
+    \begin{gathered}
+        F_{\textrm{центр.}} = m \cdot \omega^2 \cdot l \\
+        \textrm{где } l = ... , m = \rho \cdot V
+    \end{gathered}
+\end{equation}
+
+Вращение такого дебаланса вокруг собственной оси будет иметь вид гармонического колебания.
+
 \begin{definition}
-    Сила, препятствующая материальной точке, движущейся по окружности, удалиться от центра этой окружности, называется центростремительной силой. Она направлена по радиусу от окружности к центру. По третьему закону Ньютона имеется равная ей и противоположно направленная сила противодействия (сила, с которой движущаяся точна стремится удалиться от центра). Эта сила называется центробежной.
+    Гармоническим колебанием называют колебание, в процессе которого величины, характеризующие движение (смещение, скорость, ускорение и др.), изменяются по закону синуса или косинуса (гармоническому закону).
 \end{definition}
+
+Уравнение гармонического колебания дебаланса будет иметь вид:
+
+\begin{equation}\label{eq:harmonic}
+    \begin{gathered}
+        x(t) = \lambda \cos (\omega t + \varphi_0) \\
+        \textrm{где } \lambda = m \cdot \omega \cdot l
+    \end{gathered}
+\end{equation}
+
+где $x(t)$  — значение изменяющейся величины в момент времени $t$, $\lambda$ — амплитуда колебаний, $\omega$ — циклическая (круговая) частота колебаний, $\varphi_0$ — начальная фаза колебаний.
+
+Гармонические колебания являются периодическими. Период $T$ этих колебаний равен периоду функции $\cos (\omega t + \varphi_0)$, то есть:
+
+\begin{equation*}
+    \begin{aligned}
+        T = \frac{2 \pi}{\omega}
+    \end{aligned}
+\end{equation*}
+
+Начальная фаза колебаний в работе вибрационного погружателя не является важной, из чего следует, что ее можно игнорировать [\ref{fn:kostin_work}]:
+
+\footnotetext[1]{\label{fn:kostin_work} Пруфы на причину игнорирования начальная фаза колебаний...}
+
+\begin{equation}\label{eq:harmonic_notphi}
+    \begin{aligned}
+        x(t) = \lambda \cos (\omega t)
+    \end{aligned}
+\end{equation}
+
+В работе вибропогружателя полезной силой считается та, которая направлена на погружение твёрдого тела в сопротивляющуюся среду. Для компенсации сил, направленных перпендикулярно полезной силе, используются парные дебалансы, направление вращения которых в разные стороны, по отношении друг к другу (рис. \ref{fig:scheme_porg}). В таком случае, уравнение гармонического колебания будет иметь вид:
+
+\begin{equation}\label{eq:harmonic_dual}
+    \begin{aligned}
+        x(t) = 2 m \omega^2 l \cos (\omega t)
+    \end{aligned}
+\end{equation}
+
+Сила, направленная вверх может привести к разрушению твёрдого тела. Для компенсации этой силы в вибрационном погружателе используется несколько пар дебалансов разного радиуса.
+
+Уравнение гармонического колебания для второй пары дебалансов будет иметь вид:
+
+\begin{equation*}
+    \begin{aligned}
+        x(t) = 2 m_2 \cdot 4 \omega^2 \cdot l(r_2) \cdot \cos (2 \omega t)
+    \end{aligned}
+\end{equation*}
+
+Уравнение гармонического колебания для пары дебалансов в общем виде:
+
+\begin{equation}\label{eq:harmonic_common}
+    \begin{aligned}
+        x(t) = 2 m_k \cdot (k \omega)^2 \cdot l(r_k) \cdot \cos (k \omega t)
+    \end{aligned}
+\end{equation}
+
+Для всех пар дебалансов сумма гармонических колебаний будет иметь вид:
+
+\begin{equation}\label{eq:harmonic_sum}
+    \begin{gathered}
+        F = \sum_{k = 1}^{n} 2 m_k \cdot (k \omega)^2 \cdot l(r_k) \cdot \cos (k \omega t) \\
+        \textrm{где $n$ --- количество пар дебалансов} 
+    \end{gathered}
+\end{equation}
+
+Импульс силы для двух пар дебалансов за время $t$ представлен на графике (\ref{grap:impulse}).
+
+\begin{definition}
+    Импульсом силы называют векторную физическую величину, которая является мерой действия силы за некоторый промежуток времени. $\vec{I}$ --- импульс силы $\vec{F}$ за малый промежуток времени $t$.
+\end{definition}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=1\linewidth]{grap/debalance.png}
+    \caption{Импульс силы для двух пар дебалансов.}
+    \label{grap:impulse}
+\end{figure}
+
 
 \clearpage
 \section{Заключение}
@@ -57,4 +159,3 @@
 \begin{thebibliography}{}
     \bibitem{}
 \end{thebibliography}
-
