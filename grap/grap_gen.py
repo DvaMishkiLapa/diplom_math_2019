@@ -23,7 +23,7 @@ def impulse():
     plt.grid()
 
     plt.savefig('./grap/impulse.pdf')
-    plt.savefig('./grap/impulse.pgf')
+    # plt.savefig('./grap/impulse.pgf')
 
 
 impulse()
