@@ -6,5 +6,7 @@ all:
 	latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=./ $(DOC).tex
 
 clean:
-	rm ./grap/*.pgf ./grap/*.pdf
-	rm *.aux *.log *.out *.toc *.pdf *.fls *.gz *_latexmk
+	$ # rm ./grap/*.pgf
+	$ latexmk -CA
+	$ rm *.synctex.gz
+	$ # rm *.aux *.log *.out *.toc *.pdf *.fls *.gz *_latexmk
