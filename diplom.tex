@@ -2,9 +2,9 @@
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english, russian]{babel}
-\usepackage{indentfirst, microtype}
+\usepackage{amssymb, amsfonts, amsmath, amsthm, microtype, pdfpages}
 \usepackage[unicode, colorlinks=true, allcolors=black]{hyperref}
-\usepackage{graphicx, amsmath}
+\usepackage{graphicx}
 \graphicspath{{images/}}
 % \usepackage{listings}
 % \usepackage{xcolor} % Подстветка ^_^
@@ -24,13 +24,7 @@
 
 
 \begin{document}
-
-    \pagenumbering{roman}
-    \include{title}
-    \pagenumbering{arabic}
-
+    \includepdf{tp-output.pdf}
     \tableofcontents
-
     \include{main}
-
 \end{document}

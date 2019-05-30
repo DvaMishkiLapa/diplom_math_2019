@@ -12,6 +12,7 @@
 *.cb2
 .*.lb
 *.pgf
+tp-output.*
 
 ## Intermediate documents:
 *.dvi
