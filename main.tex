@@ -167,9 +167,21 @@
 Сформулируем задачу оптимальности. Пусть $f_{\max}(t)$ --- максимальное значение импульса силы за время $t$, $f_{\min}(t)$ --- минимальное значение импульса за время $t$. Тогда:
 
 \begin{equation}\label{eq:optim}
-    \begin{aligned}
-        K = \left| \frac{f_{\max}(t)}{f_{\min}(t)} \right| \rightarrow \max
-    \end{aligned}
+    \begin{gathered}
+        K = \left| \frac{f_{\max}(t)}{f_{\min}(t)} \right| \rightarrow \max \\
+        \textrm{где } f_{\max} = \max_t f(t, \lambda), f_{\min} = \min_t f(t, \lambda)
+    \end{gathered}
+\end{equation}
+
+Число $K$ будет является коэффициентом несимметрии полинома (\ref{eq:harmonic_sum}).
+
+Для достижения коэффициентом несимметрии максимального значения необходиморешение следующей задачи:
+
+\begin{equation}\label{eq:math_task}
+    \begin{gathered}
+        \inf_t f(t, \lambda) \rightarrow \sup_\lambda, \textrm{где } t \in [0, \pi]\\
+        \sum\limits_{k = 1}^n \lambda_k = c, \textrm{где } c = const > 0
+    \end{gathered}
 \end{equation}
 
 Исходя из теоремы оптимальности модели полигармонического импульса [\ref{lit:kostin_disert}] многочлен (\ref{eq:harmonic_sum}) является оптимальным тогда и только тогда, когда он с точностью до постоянного множителя имеет вид суммы Фейера:
