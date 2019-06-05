@@ -6,24 +6,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def impulse():
+def impulse(count_deb, name):
     x = [x * 0.0005 for x in range(-int(math.pi / 0.0005), int(math.pi / 0.0005))]
     y = []
-    count = 3
 
     for X in x:
         summa = []
-        for j in range(0, count):
-            summa.append((count - j) / count * math.cos((j + 1) * X))
+        for j in range(0, count_deb):
+            summa.append((count_deb - j) / count_deb * math.cos((j + 1) * X))
         y.append(sum(summa))
         summa.clear()
 
-    plt.figure(figsize=(5.8, 3.0))
+    plt.figure(figsize=(5.8, 4.0))
     plt.plot(x, y, linewidth=2)
     plt.grid()
-
-    plt.savefig('./grap/impulse.pdf')
+    plt.savefig("./grap/{0}.{1}".format(name, 'pdf'))
     # plt.savefig('./grap/impulse.pgf')
 
 
-impulse()
+impulse(3, "impulse_3")
+impulse(7, "impulse_7")
