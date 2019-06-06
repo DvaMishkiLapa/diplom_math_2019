@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def impulse(count_deb, name):
-    x = [x * 0.0005 for x in range(-int(math.pi / 0.0005), int(math.pi / 0.0005))]
+def impulse(count_deb, name, factor = 1):
+    x = [x * 0.0005 for x in range(-int(factor * math.pi / 0.0005), int(factor * math.pi / 0.0005))]
     y = []
 
     for X in x:
@@ -24,5 +24,6 @@ def impulse(count_deb, name):
     # plt.savefig('./grap/impulse.pgf')
 
 
+impulse(1, "impulse_1", 2)
 impulse(3, "impulse_3")
 impulse(7, "impulse_7")
