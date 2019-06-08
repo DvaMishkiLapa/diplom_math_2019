@@ -11,9 +11,14 @@ all:
 	sed -e ${SED} titlepage.fodt > tp-output.fodt
 	libreoffice --headless --convert-to pdf tp-output.fodt
 
+	
 	python3 ./grap/grap_gen.py
-	latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=./ $(DOC).tex
+
+	pdflatex diplom.tex
+	biber diplom
+	pdflatex diplom.tex
+	pdflatex diplom.tex
 
 clean:
 	rm -f ./grap/*.pdf
-	rm -f *.aux *.log *.out *.toc *.fls *.gz *_latexmk *.synctex.gz tp-output.*
+	rm -f *.aux *.bbl *.bcf *.blg *.log *out *.run.xml *.toc
