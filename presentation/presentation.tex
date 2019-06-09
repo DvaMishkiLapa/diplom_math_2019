@@ -32,11 +32,33 @@
         \frametitle{Актуальность проблемы}
         \begin{center}
             \begin{minipage}[h]{0.97\linewidth}
-                На сегодняшний день в строительной сфере довольно часто возникает потребность в вибропогружателях для погружения свайных элементов в землю.
-                \newline
-                Такая востребованность порождает задача оптимизации характеристик таких вибропогружателей для получения наилучшего результата их работы.
-                \newline
-                Решение задачи прикладными методами несомненно актуальна в данный момент и соответствует профилю.
+                \begin{minipage}[h]{0.95\linewidth}
+                    На сегодняшний день в строительной сфере довольно часто возникает потребность в вибропогружателях для погружения свайных элементов в землю.
+                    \newline
+                    Такая востребованность порождает задача оптимизации характеристик таких вибропогружателей для получения наилучшего результата их работы.
+                    \newline
+                    Решение задачи прикладными методами несомненно актуальна в данный момент и соответствует профилю.
+                \end{minipage}
+                \begin{minipage}[h]{0.25\linewidth}
+                    \begin{figure}[h]
+                        \centering
+                        \includegraphics[width=1\linewidth]{../img/photo_1.jpg}
+                    \end{figure}
+                \end{minipage}
+                \hfill
+                \begin{minipage}[h]{0.25\linewidth}
+                    \begin{figure}[h]
+                        \centering
+                        \includegraphics[width=1\linewidth]{../img/photo_2.jpg}
+                    \end{figure}
+                \end{minipage}
+                \hfill
+                \begin{minipage}[h]{0.32\linewidth}
+                    \begin{figure}[h]
+                        \centering
+                        \includegraphics[width=1\linewidth]{../img/photo_3.jpg}
+                    \end{figure}
+                \end{minipage}
             \end{minipage}
         \end{center}
     \end{frame}
@@ -68,9 +90,8 @@
                 \begin{minipage}[h]{0.36\linewidth}
                     \begin{figure}[h]
                         \centering
-                        \includegraphics[width=1\linewidth]{../img/scheme_porg.png}
+                        \includegraphics[width=1\linewidth]{../img/scheme_porg_2.png}
                         \caption{Схема вибрационного погружателя.}
-                        \label{fig:scheme_porg}
                     \end{figure}
                 \end{minipage}
             \end{minipage}
@@ -84,20 +105,20 @@
             \begin{minipage}[h]{0.97\linewidth}
                 \begin{minipage}[h]{0.6\linewidth}
                     Центробежная сила:
-                    \begin{equation*}
+                    \begin{equation}
                         \begin{gathered}
                             F_{\textrm{центр.}} = m \cdot \omega^2 \cdot l \\
                             \textrm{где } l = \frac{4 r}{3 \pi}
                         \end{gathered}
-                    \end{equation*}
+                    \end{equation}
                     \\
                     Гармонические колебания:
-                    \begin{equation*}
+                    \begin{equation}
                         \begin{gathered}
                             x(t) = \lambda \cos (\omega t) \\
                             \textrm{где } \lambda = m \cdot \omega^2 \cdot l
                         \end{gathered}
-                    \end{equation*}
+                    \end{equation}
                 \end{minipage}
                 \hfill
                 \begin{minipage}[h]{0.36\linewidth}
@@ -117,17 +138,17 @@
         \begin{center}
             \begin{minipage}[h]{0.97\linewidth}
                 Гармонические колебания:
-                \begin{equation*}
+                \begin{equation}
                     \begin{gathered}
                         x(t) = 2 \lambda \cos (\omega t + \varphi_0), \textrm{где } \lambda = m \cdot \omega^2 \cdot l
                     \end{gathered}
-                \end{equation*}
+                \end{equation}
                 Уравнение гармонического колебания для пары дебалансов в общем виде:
-                \begin{equation*}
+                \begin{equation}
                     \begin{aligned}
                         x(t) = 2 m_k \cdot (k \omega)^2 \cdot l(r_k) \cdot \cos (k \omega t)
                     \end{aligned}
-                \end{equation*}
+                \end{equation}
                 \begin{figure}[h]
                     \centering
                     \includegraphics[width=0.52\linewidth]{../img/double_debalance.png}
@@ -174,11 +195,11 @@
             \begin{minipage}[h]{0.97\linewidth}
                 Пусть $f_{\max}(t)$ --- максимальное значение импульса силы за время $t$,
                 $f_{\min}(t)$ --- минимальное значение импульса за время $t$. Тогда:
-                \begin{equation*}
+                \begin{equation}
                     \begin{gathered}
                         K = \left| \frac{f_{\max}(t)}{f_{\min}(t)} \right| \rightarrow \max
                     \end{gathered}
-                \end{equation*}
+                \end{equation}
 
                 Исходя из теоремы оптимальности модели полигармонического импульса многочлен (\ref{eq:harmonic_sum})
                 является оптимальным тогда и только тогда, когда он с точностью до постоянного множителя имеет вид суммы Фейера:
