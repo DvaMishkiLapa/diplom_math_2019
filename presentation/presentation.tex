@@ -35,25 +35,25 @@
                 \begin{minipage}[h]{0.95\linewidth}
                     На сегодняшний день в строительной сфере довольно часто возникает потребность в вибропогружателях для погружения свайных элементов в землю.
                     \newline
-                    Такая востребованность порождает задачу оптимизации характеристик вибропогружателей для получения наилучшего результата их работы.
+                    Такая востребованность порождает задачу оптимизации характеристик вибропогружателей для получения наилучшего результата их работы\footnotemark[1]\footnotemark[2].
                     \newline
-                    Решение задачи прикладными методами несомненно актуальна в данный момент и соответствует профилю.
+                    Решение задачи прикладными методами несомненно актуальна и соответствует профилю.
                 \end{minipage}
-                \begin{minipage}[h]{0.25\linewidth}
+                \begin{minipage}[h]{0.22\linewidth}
                     \begin{figure}[h]
                         \centering
                         \includegraphics[width=1\linewidth]{../img/photo_1.jpg}
                     \end{figure}
                 \end{minipage}
                 \hfill
-                \begin{minipage}[h]{0.25\linewidth}
+                \begin{minipage}[h]{0.22\linewidth}
                     \begin{figure}[h]
                         \centering
                         \includegraphics[width=1\linewidth]{../img/photo_2.jpg}
                     \end{figure}
                 \end{minipage}
                 \hfill
-                \begin{minipage}[h]{0.32\linewidth}
+                \begin{minipage}[h]{0.29\linewidth}
                     \begin{figure}[h]
                         \centering
                         \includegraphics[width=1\linewidth]{../img/photo_3.jpg}
@@ -61,6 +61,8 @@
                 \end{minipage}
             \end{minipage}
         \end{center}
+        \footnotetext[1]{\label{foot-1} Блехман И. И. Вибрационная механика. --- М. : Физико-математическая литература, 1994.}
+        \footnotetext[2]{\label{foot-2} Костин Д. В. Бифуркация резонансных колебаний и оптимизация тригонометрического импульса по коэффициенту несимметрии // Математический сборник. --- М., 2016.}
     \end{frame}
 
 
@@ -77,21 +79,24 @@
 
 
     \begin{frame}
-        \frametitle{Конструкция вибропогружателя}
+        \frametitle{Конструкция импульсного погружателя}
         \begin{center}
             \begin{minipage}[h]{0.97\linewidth}
-                \begin{minipage}[h]{0.5\linewidth}
-                    Принцип действия погружателя основан на эффекте резкого снижения сопротивлению погружения свайного элемента
-                    при сообщении последнему вибрации.\\
-                    При вращении дебалансов на их ось крепления действует центробежная сила и вибрационный погружатель получает вибрирующее движение,
-                    которое сообщается свайному элементу через наголовник.
+                \begin{minipage}[h]{0.55\linewidth}
+                    Работа погружателя основана на двух основных принципах:
+                    \begin{enumerate} 
+                        \item На эффекте резкого снижения сопротивлению погружения свайного элемента при сообщении последнему вибрации;
+                        \item На действии полигармонического импульса, создаваемого центробежными силами системы дебалансов.
+                    \end{enumerate}
+                    При вращении валов (1) с дебалансами (2) на их ось крепления действует центробежная сила и погружатель получает вибрирующее движение,
+                    которое через наголовник (3) сообщается свайному элементу (4).
                 \end{minipage}
                 \hfill
                 \begin{minipage}[h]{0.36\linewidth}
                     \begin{figure}[h]
                         \centering
                         \includegraphics[width=1\linewidth]{../img/scheme_porg_2.png}
-                        \caption{Схема вибрационного погружателя.}
+                        \caption{Схема импульсного погружателя.}
                     \end{figure}
                 \end{minipage}
             \end{minipage}
@@ -104,6 +109,8 @@
         \begin{center}
             \begin{minipage}[h]{0.97\linewidth}
                 \begin{minipage}[h]{0.6\linewidth}
+                    Пусть дан  дебаланс с радиусом $r$, радиус вала которого равен $R$,
+                    $\omega$ --- угловая скорость и $l$ --- расстояние от центра масс до оси вращения дебаланса, а его масса будет равна $m$.
                     Центробежная сила:
                     \begin{equation}
                         \begin{gathered}
@@ -137,17 +144,12 @@
         \frametitle{Конструкция пары дебалансов}
         \begin{center}
             \begin{minipage}[h]{0.97\linewidth}
-                Гармонические колебания:
+                Для компенсации горизонтальных сил в конструкции погружателя используются парные дебалансы.\\
+                Гармонические колебания пары дебалансов:
                 \begin{equation}
                     \begin{gathered}
                         x(t) = 2 \lambda \cos (\omega t), \textrm{где } \lambda = m \cdot \omega^2 \cdot l
                     \end{gathered}
-                \end{equation}
-                Уравнение гармонического колебания для пары дебалансов в общем виде:
-                \begin{equation}
-                    \begin{aligned}
-                        x(t) = 2 m_k \cdot (k \omega)^2 \cdot l(r_k) \cdot \cos (k \omega t)
-                    \end{aligned}
                 \end{equation}
                 \begin{figure}[h]
                     \centering
@@ -163,27 +165,41 @@
         \frametitle{Гармонические колебания дебалансов}
         \begin{center}
             \begin{minipage}[h]{0.97\linewidth}
-                Cумма гармонических колебаний для всех пар дебалансов:
+                При использовании нескольких пар дебалансов, вышестоящий уровень дебалансов должен иметь угловую скорость в два раза выше, чем прошлый.\\
+                \newline
+                \begin{minipage}[h]{0.44\linewidth}
+                    \begin{figure}[h]
+                        \centering
+                        $x(t) = \lambda_1 \cos (\omega t)$
+                        \includegraphics[width=1\linewidth]{../grap/impulse_1.pdf}
+                        \caption{Гармонические колебания для одной пары дебалансов.}
+                    \end{figure}
+                \end{minipage}
+                \hfill
+                \begin{minipage}[h]{0.44\linewidth}
+                    \begin{figure}[h]
+                        \centering
+                        $x(t) = \lambda_1 \cos (\omega t) + \lambda_2 \cos (2\omega t)$
+                        \includegraphics[width=1\linewidth]{../grap/impulse_2.pdf}
+                        \caption{Гармонические колебания для двух пар дебалансов.}
+                    \end{figure}
+                \end{minipage}
+            \end{minipage}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Гармонические нескольких пар дебалансов}
+        \begin{center}
+            \begin{minipage}[h]{0.97\linewidth}
+                Гармоническое колебания для $n$ дебалансов, где $k$ --- порядковый номер пары дебалансов, будет иметь вид:
                 \begin{equation}\label{eq:harmonic_sum}
                     \begin{gathered}
                         F = \sum\limits_{k = 1}^n 2 \lambda_k \cdot \cos (k \omega t), \lambda = m \cdot \omega^2 \cdot l
                     \end{gathered}
                 \end{equation}
-                \begin{minipage}[h]{0.46\linewidth}
-                    \begin{figure}[h]
-                        \centering
-                        \includegraphics[width=1\linewidth]{../grap/impulse_1.pdf}
-                        \caption{График работы вибропогружателя.}
-                    \end{figure}
-                \end{minipage}
-                \hfill
-                \begin{minipage}[h]{0.46\linewidth}
-                    \begin{figure}[h]
-                        \centering
-                        \includegraphics[width=1\linewidth]{../grap/impulse_7.pdf}
-                        \caption{График работы импульсного погружателя.}
-                    \end{figure}
-                \end{minipage}
+                Использование нескольких пар дебалансов разных характеристик позволяет увеличить импульс,
+                направленный на погружение свайного элемента и уменьшить импульс, направленный в противоположную сторону.
             \end{minipage}
         \end{center}
     \end{frame}
@@ -193,29 +209,53 @@
         \frametitle{Задача оптимизации}
         \begin{center}
             \begin{minipage}[h]{0.97\linewidth}
-                Пусть $f_{\max}(t)$ --- максимальное значение импульса силы за время $t$,
-                $f_{\min}(t)$ --- минимальное значение импульса за время $t$. Тогда:
+                Пусть $f_{\max}(t)$ --- максимальное значение импульса силы за время $t$, $f_{\min}(t)$ --- минимальное значение импульса за время $t$. Тогда:
                 \begin{equation}
                     \begin{gathered}
                         K = \left| \frac{f_{\max}(t)}{f_{\min}(t)} \right| \rightarrow \max
                     \end{gathered}
                 \end{equation}
+                \begin{block}{Теорема\footnotemark[3]}\label{teorema}
+                    Многочлен (\ref{eq:harmonic_sum}) является оптимальным т. и т. т. , когда он с точностью до постоянного множителя имеет вид суммы Фейера:
+                    \begin{equation}\label{eq:feer}
+                        \begin{gathered}
+                            f_n(t) = \sum\limits_{k = 1}^n (n + 1 - k) \cos(kt)\\
+                            \max \limits_{\lambda} K_n(\lambda) = n
+                        \end{gathered}
+                    \end{equation}
+                \end{block}
+            \end{minipage}
+        \end{center}
+        \footnotetext[3]{\label{foot-3} Костин Д. В. Бифуркация резонансных колебаний и оптимизация тригонометрического импульса по коэффициенту несимметрии
+        // Математический сборник. --- М., 2016. — С. 90—109.}
+    \end{frame}
 
-                Исходя из теоремы оптимальности модели полигармонического импульса многочлен (\ref{eq:harmonic_sum})
-                является оптимальным тогда и только тогда, когда он с точностью до постоянного множителя имеет вид суммы Фейера:
-
-                \begin{equation}\label{eq:feer}
-                    \begin{gathered}
-                        f_n(t) = \sum\limits_{k = 1}^n (n + 1 - k) \cos(kt)\\
-                        \max \limits_{\lambda} K_n(\lambda) = n
-                    \end{gathered}
-                \end{equation}
-                Из этого следует, что:
+    \begin{frame}
+        \frametitle{Задача оптимизации}
+        \begin{center}
+            \begin{minipage}[h]{0.97\linewidth}
+                Исходя из теоремы выше, следует, что:
                 \begin{equation}
                     \begin{gathered}
                         \lambda_k = \frac{n - k + 1}{n}
                     \end{gathered}
                 \end{equation}
+                Это позволяет найти коэффициент $\lambda$ для $k$-й пары дебалансов, когда общее количество дебалансов погружателя --- $n$.
+            \end{minipage}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Программная реализация}
+        \begin{center}
+            \begin{minipage}[h]{0.97\linewidth}
+                При помощи применения теоремы об оптимальности модели полигармонического импульса и на основе теории вибрационных машин
+                на языке Python была разработана программа для автоматического расчета характеристик дебалансов погружателя.
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=0.62\linewidth]{../img/xolm_2.png}
+                    \caption{Скриншот программы.}
+                \end{figure}
             \end{minipage}
         \end{center}
     \end{frame}
