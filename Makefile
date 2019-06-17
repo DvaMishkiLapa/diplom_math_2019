@@ -11,7 +11,6 @@ all:
 	sed -e ${SED} titlepage.fodt > tp-output.fodt
 	libreoffice --headless --convert-to pdf tp-output.fodt
 
-	
 	python3 ./grap/grap_gen.py
 
 	pdflatex diplom.tex

@@ -25,6 +25,5 @@ def impulse(count_deb, name, factor = 1):
 
 
 impulse(1, "impulse_1")
-impulse(2, "impulse_2")
 impulse(3, "impulse_3")
 impulse(7, "impulse_7")
