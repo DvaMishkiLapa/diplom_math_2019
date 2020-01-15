@@ -28,6 +28,9 @@ overfull:
 install_venv:
 	@./install_venv.sh
 
+install_pack:
+	@./install_pack.sh
+
 clean:
 	rm -f ./grap/*.pdf
 	rm -f *.aux *.bbl *.bcf *.blg *.log *out *.run.xml *.toc
