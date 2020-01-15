@@ -25,6 +25,9 @@ overfull:
 	@pdflatex diplom.tex | grep -va Underfull | grep  -a . | grep -aC 12 Overfull
 	@pdflatex diplom.tex | grep -c Overfull
 
+install_venv:
+	@./install_venv.sh
+
 clean:
 	rm -f ./grap/*.pdf
 	rm -f *.aux *.bbl *.bcf *.blg *.log *out *.run.xml *.toc
